@@ -34,7 +34,17 @@ Key predictors include:
 The model is interpreted as an adjusted association, not a causal estimate, because the survey is cross-sectional.
 
 ---
+## Summary of Hypothesis-Based Results
 
+The table below summarizes the main hypothesis-based quantitative results, excluding H1 because the primary health model is reported separately in the logistic regression output.
+
+| Hypothesis | Relationship Tested | Test Used | Main Result | Interpretation |
+|---|---|---|---|---|
+| H2 | Safety-net receipt → Employment improvement | Logistic / Chi-square | OR = 2.54, p = 0.0298 | Supported. Safety-net receipt is associated with improved post-migration employment transitions. |
+| H3 | Migration duration → Post-migration income | Spearman / ANOVA | ρ = -0.035, p = 0.703; ANOVA p = 0.099 | Not supported. Longer residence in Dhaka does not clearly predict higher post-migration income. |
+| H4 | Education → Hygiene practices | Fisher’s Exact Test | p < 0.00001 | Supported. Education is strongly associated with hygiene-related practices. |
+| H5 | Displacement type → Disease frequency | ANOVA | p = 0.0293 | Supported. Disease burden varies significantly across displacement pathways. |
+| H6 | Safety-net receipt → Income recovery | Wilcoxon test | p = 0.187 | Not supported. Safety-net receipt is not significantly associated with income recovery. |
 ## Hypothesis-Based Outputs
 
 The exported tables correspond to the project’s main hypothesis-based analysis:
