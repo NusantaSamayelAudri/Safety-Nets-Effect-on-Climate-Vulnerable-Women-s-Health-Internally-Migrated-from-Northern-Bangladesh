@@ -57,6 +57,14 @@ Health vulnerability varies by type of displacement, with higher disease burden 
 
 Documentation barriers, local gatekeeping, informal fees, and limited service access prevent many women from converting formal entitlements into usable health protection.
 
+## Analysis Code
+
+The main R analysis script is available here:
+
+[View the R analysis workflow](scripts/01_clean_analyze_model.R)
+
+This script documents the full quantitative workflow, including data import, cleaning, variable construction, descriptive summaries, hypothesis-based tests, logistic regression modeling, odds-ratio table generation, and figure export.
+
 ## Repository Structure
 
 ```text
