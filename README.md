@@ -1,149 +1,78 @@
-# Data Source and Structure
+# Safety Nets Effect on Climate-Vulnerable Women’s Health  
+### Internally Migrated from Northern Bangladesh
 
-## Data Source
+## Overview
 
-This project is based on primary household survey data collected for the study:
+This repository contains the analysis workflow for a mixed-methods study on climate-displaced women living in informal settlements in Dhaka, Bangladesh.
 
-**Safety Nets Effect on Climate-Vulnerable Women’s Health: Internally Migrated from Northern Bangladesh**
+The study examines whether social safety nets improve the health and livelihood outcomes of women who migrated from climate-affected northern districts to three Dhaka slums: Korail, Kallyanpur, and City Colony.
 
-The survey covered **120 households** across three informal settlements in Dhaka, Bangladesh:
+Using household survey data, qualitative field evidence, and regression-based analysis, the project evaluates how social protection, clinic access, displacement pathways, income, and institutional barriers shape women’s health vulnerability after migration.
 
-- Korail Slum
-- Kallyanpur Porah Slum
-- City Colony Slum
+## Study Context
 
-The study focused on climate-displaced women who migrated from northern Bangladesh due to climate-related stressors such as drought, river erosion, flooding, crop loss, and food insecurity.
+Bangladesh is highly vulnerable to climate-related hazards such as drought, river erosion, flooding, and food insecurity. These pressures contribute to internal migration, with many displaced women relocating to urban informal settlements where they face insecure housing, limited healthcare access, sanitation constraints, and exclusion from formal support systems.
 
-## Sampling Design
+This project focuses on the gap between nominal safety-net availability and actual protection for climate-displaced women in urban slum contexts.
 
-A stratified household sampling design was used across the three study sites. Each slum contributed 40 households to the final sample.
+## Data and Methods
 
-| Study Site | Sample Size | Sampling Approach |
-|---|---:|---|
-| Korail Slum | 40 households | Proportional sampling across sub-areas |
-| Kallyanpur Porah Slum | 40 households | Proportional sampling across sub-areas |
-| City Colony Slum | 40 households | Proportional sampling across sub-areas |
-| **Total** | **120 households** | Stratified household survey |
+The study uses a convergent mixed-methods design, combining quantitative and qualitative evidence.
 
-The sampling design was based on field mapping of household population estimates in each slum sub-area.
+### Quantitative component
 
-## Main Data Components
+- Household survey of 120 households
+- Individual-level information covering 342 household members
+- Variables on migration history, safety-net receipt, income, employment, health, hygiene, and clinic access
+- Fisher’s Exact Tests for categorical associations
+- Non-parametric tests for skewed income outcomes
+- Logistic regression for adjusted predictors of good self-reported health
 
-The analysis draws on several linked components from the household survey and appendix tables.
+### Qualitative component
 
-### 1. Sampling and Study Design
+- Focus group discussions
+- In-depth interviews
+- Key informant interviews
+- Thematic analysis of institutional exclusion, documentation barriers, informal fees, healthcare access, and reliance on community intermediaries
 
-Contains information on:
+## Key Findings
 
-- Slum sub-areas
-- Estimated household counts
-- Proportional sample allocation
-- Sampling technique
+### 1. Safety nets support livelihood transitions
 
-### 2. Migration and Income Data
+Safety-net receipt is associated with improved post-migration employment transitions. This suggests that social protection may help displaced women stabilize livelihoods after migration.
 
-Contains household-level information on:
+### 2. Safety nets do not independently predict health
 
-- Homeplace before migration
-- Migration companions
-- Vehicle or pathway of migration
-- Income before migration
-- Income after migration
-- Employment before migration
-- Employment after migration
+After accounting for structural mediators, safety-net participation does not independently predict good self-reported health.
 
-### 3. Health and Aid Variables
+### 3. Clinic access is the strongest health predictor
 
-Contains information on:
+Access to nearby healthcare services is the most robust predictor of good self-reported health in the adjusted model.
 
-- Health-related aid received
-- Aid receipt status
-- Type of aid received
-- Aid source, including government, NGO, and UN agency support
-- Education level
-- Handwashing practices
-- Kitchen cleanliness
+### 4. Displacement pathways matter
 
-### 4. Health Conditions and Aid Receipt
+Health vulnerability varies by type of displacement, with higher disease burden observed among women displaced through drought and food-insecurity-related pathways.
 
-Contains household-level illness and aid information, including:
+### 5. Structural barriers shape vulnerability
 
-- Types of reported health problems
-- Whether health-related aid was received
-- Type of assistance received, such as free medicine, vaccination, or government treatment
+Documentation barriers, local gatekeeping, informal fees, and limited service access prevent many women from converting formal entitlements into usable health protection.
 
-### 5. Education and Hygiene Variables
-
-Contains information on:
-
-- Educational attainment
-- Literacy level
-- Handwashing after toilet use
-- Handwashing before eating
-- Kitchen cleanliness
-
-### 6. Regression and Hypothesis Testing Outputs
-
-Contains summarized analytical outputs, including:
-
-- Logistic regression results for good self-reported health
-- Odds ratios and confidence intervals
-- Summary of hypothesis testing results
-
-## Key Variables Used in the R Analysis
-
-| Variable | Description |
-|---|---|
-| `household_id` | Unique household identifier |
-| `safety_net_binary` | Whether the respondent received safety-net support |
-| `aid_received_on_health` | Type or status of health-related aid received |
-| `self_health` | Derived self-reported health category |
-| `good_health` | Binary health outcome used in logistic regression |
-| `clinic_access` | Whether the respondent had access to a nearby clinic |
-| `income_before` | Household income before migration |
-| `income_after` | Household income after migration |
-| `income_after_k` | Post-migration income scaled per 1,000 BDT |
-| `employment_before` | Employment status before migration |
-| `employment_after` | Employment status after migration |
-| `employment_improved` | Whether employment status improved after migration |
-| `years_staying_in_dhaka` | Duration of residence in Dhaka |
-| `duration_group` | Categorized migration duration |
-| `major_reason_of_displacement` | Original reason for climate-related migration |
-| `displacement_group` | Grouped displacement pathway |
-| `education_level` | Reported education level |
-| `edu_group` | Recoded education category |
-| `kitchen_clean` | Binary kitchen cleanliness indicator |
-| `wash_before_eating` | Binary handwashing indicator before eating |
-| `types_of_health_problems` | Reported illness or health condition combinations |
-
-## Data Privacy and Availability
-
-The raw household-level dataset is **not publicly shared** because it contains sensitive respondent-level information from climate-displaced women living in informal settlements.
-
-This repository includes:
-
-- R scripts documenting the analysis workflow
-- Selected summary tables
-- Selected figures
-- Variable construction logic
-- Model outputs
-
-The repository does **not** include personally identifiable or sensitive raw respondent-level records.
-
-## Reproducibility Note
-
-The analysis code is provided to document the data-cleaning, variable construction, hypothesis testing, regression modeling, and visualization workflow.
-
-Because the raw dataset is restricted for ethical and privacy reasons, external users may not be able to fully reproduce the analysis without access to the protected survey data.
-
-## Suggested Repository Structure
+## Repository Structure
 
 ```text
 .
 ├── README.md
-├── DATA_SOURCE.md
 ├── scripts/
 │   └── 01_clean_analyze_model.R
 ├── outputs/
 │   ├── figures/
+│   │   ├── adjusted_odds_ratios_good_health.png
+│   │   ├── employment_improvement_by_safety_net.png
+│   │   ├── health_by_safety_net_receipt.png
+│   │   └── kitchen_cleanliness_by_education.png
 │   └── tables/
+│       ├── h2_employment_by_safety_net.csv
+│       ├── h3_income_by_duration_group.csv
+│       ├── h4_kitchen_cleanliness_by_education.csv
+│       ├── h5_income_by_displacement_group.csv
+│       └── logistic_regression_odds_ratios.csv
