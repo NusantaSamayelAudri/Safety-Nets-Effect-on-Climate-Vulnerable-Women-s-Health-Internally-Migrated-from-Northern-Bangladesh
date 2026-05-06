@@ -4,7 +4,7 @@ This gallery presents selected visual outputs from the R analysis workflow. The 
 
 ---
 
-## Regression and Safety-Net Findings
+## Safety-Net, Health, and Employment Findings
 
 <table>
   <tr>
@@ -35,19 +35,30 @@ This gallery presents selected visual outputs from the R analysis workflow. The 
 
 ---
 
-## Displacement, Income, and Duration Patterns
+## Displacement, Health, and Income Patterns
 
 <table>
   <tr>
+    <td width="50%" align="center" valign="top">
+      <h3>Health by Displacement Group</h3>
+      <img src="../../figures/Hypo5: Health vs Displacement.jpeg" width="100%">
+      <p><em>Additional displacement-health visualization used to compare health outcomes by displacement pathway.</em></p>
+    </td>
     <td width="50%" align="center" valign="top">
       <h3>Income Distribution by Displacement Group</h3>
       <img src="../../figures/Hypo5(b): Income Distribution vs displacement.jpeg" width="100%">
       <p><em>Post-migration income variation across displacement pathways.</em></p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" align="center" valign="top">
       <h3>Income After Migration by Duration Group</h3>
       <img src="../../figures/Hypo 3(b): Income After Migration.jpeg" width="100%">
       <p><em>Post-migration income distribution across duration groups.</em></p>
+    </td>
+    <td width="50%" align="center" valign="top">
+      <h3>Migration, Income, and Displacement</h3>
+      <p><em>This section groups figures that examine how displacement type and migration duration relate to income and health after migration.</em></p>
     </td>
   </tr>
 </table>
@@ -67,22 +78,6 @@ This gallery presents selected visual outputs from the R analysis workflow. The 
       <h3>Handwashing Before Eating by Education Group</h3>
       <img src="../../figures/Hypo 4(b): Handwashing and education.jpeg" width="100%">
       <p><em>Reported handwashing practice across education groups.</em></p>
-    </td>
-  </tr>
-</table>
-
----
-
-## Additional Displacement-Health Figure
-
-<table>
-  <tr>
-    <td width="50%" align="center" valign="top">
-      <h3>Health vs Displacement, Alternative Version</h3>
-      <img src="../../figures/Hypo5: Health vs Displacement.jpeg" width="100%">
-      <p><em>Additional displacement-health figure included for comparison.</em></p>
-    </td>
-    <td width="50%" align="center" valign="top">
     </td>
   </tr>
 </table>
