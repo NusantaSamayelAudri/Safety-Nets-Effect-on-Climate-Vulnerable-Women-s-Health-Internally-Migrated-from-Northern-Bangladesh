@@ -1,0 +1,2 @@
+# Safety-Nets-Effect-on-Climate-Vulnerable-Women-s-Health-Internally-Migrated-from-Northern-Bangladesh
+Mixed-methods study of climate-displaced women in Dhaka slums (n=120 households). Safety nets improve employment transitions but not health; clinic access is the strongest predictor of health. Findings highlight structural barriers like documentation, costs, and access shaping vulnerability beyond transfers.
