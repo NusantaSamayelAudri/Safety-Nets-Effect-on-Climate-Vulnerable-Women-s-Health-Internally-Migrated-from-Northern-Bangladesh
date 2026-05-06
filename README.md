@@ -61,7 +61,7 @@ Documentation barriers, local gatekeeping, informal fees, and limited service ac
 
 The main R analysis script is available here:
 
-[View the R analysis workflow](scripts/01_clean_analyze_model.R)
+[View the R analysis workflow](Scripts/01_clean_analyze_model.R)
 
 This script documents the full quantitative workflow, including data import, cleaning, variable construction, descriptive summaries, hypothesis-based tests, logistic regression modeling, odds-ratio table generation, and figure export.
 
